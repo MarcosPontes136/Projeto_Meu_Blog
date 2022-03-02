@@ -14,3 +14,9 @@ npm init -y
 npm i json-server
 ```
 
+Seguindo o projeto, foi criado na parte de frontEnd usando angular algumas pastas: contato, feed, footer, home e navbar com o comando:
+
+```shell script
+ng g c
+```
+
