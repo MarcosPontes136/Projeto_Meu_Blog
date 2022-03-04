@@ -1,9 +1,5 @@
-.parallax{
-    background-image: url('https://cdn.pixabay.com/photo/2020/08/18/23/19/spheres-5499579_960_720.png');
-    min-height: 500px;
+body{
+    background-image: linear-gradient(to right, #000000,#BD5200, #DB4B03,#000000);
     background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
-
