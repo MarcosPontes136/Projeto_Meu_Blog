@@ -3,3 +3,110 @@ body{
     background-attachment: fixed;
     
 }
+
+.CShenlong{
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
+    min-height: 500px; 
+
+    margin: 20px;
+    background-image: url('https://cdn.ome.lt/TcHUN6_hiBYjo0Ivj1p9AaULL_k=/1200x630/smart/extras/conteudos/shenron.png');
+   
+    animation: CShenlong 7s;
+}
+
+@keyframes CShenlong{
+    from{    
+        min-height: 0;
+        transform: translatex(calc(100vw - 200px));
+
+    }to{
+
+        transform: translateX(0);
+
+    }
+}
+
+
+.line{ 
+    margin: 0 auto;
+    font-size: 3em;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.typing-animation{
+    animation: blinkCursor 500ms steps(50) infinite normal,
+    typing  2.2s steps(50) 1s normal both;
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }to{
+        width: 4.5em;
+    }
+}
+@keyframes blinkCursor{
+    from{
+        border-right-color: #000000;
+    }to{
+        border-right-color: transparent;
+    }
+}
+
+.CEsfera{
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    min-height: 500px; 
+    margin: 20px;
+    background-image: url('https://cdn.pixabay.com/photo/2020/08/18/23/19/spheres-5499579_960_720.png');
+}
+
+
+.social-network{
+    list-style: none;
+    padding: 0;
+}
+.social-network > li{
+    display: inline;
+    padding: 5px;
+    margin: 0;
+    font-size: 30px;
+}
+
+.icoYoutube, .icoGitHub{
+    color: rgb(255, 255, 255);
+}
+
+.icoYoutube:hover{
+    color: rgb(255, 0, 0);
+}
+.icoGitHub:hover{
+    color: #1b35c9;
+}
+
+hr{
+    background-image: linear-gradient(to right, #BD5200, #000000 , #BD5200); 
+    margin-top: 2cm;
+    margin-bottom: 1cm;
+    height: 4px;
+}
+
+.whiteText{
+    color: #ffffff;
+}
+
+.circle{
+    transition-property: border-radius;
+    transition-delay: 1ms;
+    transition-duration: 2s;
+
+}
+.circle:hover
+{
+    border-radius:50%;
+}

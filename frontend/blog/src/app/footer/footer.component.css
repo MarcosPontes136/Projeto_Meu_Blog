@@ -1,3 +1,8 @@
+footer{
+    background-image: linear-gradient(to right, #000000,#BD5200, #DB4B03,#000000);
+    background-attachment: fixed;
+}
+
 .social-network{
     list-style: none;
     padding: 0;
@@ -7,14 +12,14 @@
     display: inline;
     padding: 5px;
     margin: 0;
-    font-size: 30px;
+    font-size: 25px;
 }
 
-.icoFacebook, .icoInstagram, .icoLinkedin{
-    color: white;
+.icoInstagram, .icoLinkedin, .icoGithub{
+    color: rgb(255, 255, 255);
 }
 
-.icoFacebook:hover{
+.icoGithub:hover{
     color: aqua;
 }
 
