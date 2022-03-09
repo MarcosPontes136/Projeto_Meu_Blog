@@ -1,7 +1,7 @@
 body{
     background-image: linear-gradient(to right, #000000,#BD5200, #DB4B03,#000000);
     background-attachment: fixed;
-    
+    padding: 1cm;
 }
 
 .CShenlong{
@@ -10,9 +10,8 @@ body{
     background-size: cover; 
     background-position: center;
     min-height: 500px; 
-
-    margin: 20px;
     background-image: url('https://cdn.ome.lt/TcHUN6_hiBYjo0Ivj1p9AaULL_k=/1200x630/smart/extras/conteudos/shenron.png');
+    margin: 20px;
    
     animation: CShenlong 7s;
 }
@@ -23,12 +22,10 @@ body{
         transform: translatex(calc(100vw - 200px));
 
     }to{
-
         transform: translateX(0);
 
     }
 }
-
 
 .line{ 
     margin: 0 auto;
@@ -45,7 +42,7 @@ body{
     from{
         width: 0;
     }to{
-        width: 4.5em;
+        width: 6em;
     }
 }
 @keyframes blinkCursor{
@@ -55,17 +52,6 @@ body{
         border-right-color: transparent;
     }
 }
-
-.CEsfera{
-    background-attachment: fixed; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    min-height: 500px; 
-    margin: 20px;
-    background-image: url('https://cdn.pixabay.com/photo/2020/08/18/23/19/spheres-5499579_960_720.png');
-}
-
 
 .social-network{
     list-style: none;

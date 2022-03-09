@@ -1,0 +1,5 @@
+body{
+    background-image: linear-gradient(to right, #000000,#BD5200, #DB4B03,#000000);
+    background-attachment: fixed;
+    padding: 1cm;
+}
