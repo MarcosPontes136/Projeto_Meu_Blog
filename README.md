@@ -1,6 +1,6 @@
 <h2>Projeto Meu Blog - ALPHA =V0.01</h2>
 <div align="center">
-    <img src="frontend/blog/src/assent/Video_Apresentacao.gif" width="800" height="450">
+    <img src="frontend/blog/src/assets/Video_Apresentacao.gif" width="500" height="350">
 </div>
 
 <p><br>
