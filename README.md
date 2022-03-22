@@ -1,7 +1,10 @@
-<h2>Projeto Meu Blog</h2>
+<h2>Projeto Meu Blog - ALPHA =V0.01</h2>
+<div align="center">
+    <img src="frontend/blog/src/assent/Video_Apresentacao.gif" width="800" height="450">
+</div>
 
 <p><br>
-Primeiramente esse projeto é criado com objetivo de usar as tecnologias Java e Angular em conjunto.
+Primeiramente esse projeto é criado com objetivo de usar as tecnologias Java e Node.js em conjunto.
 </p><br>
 
 <p>
