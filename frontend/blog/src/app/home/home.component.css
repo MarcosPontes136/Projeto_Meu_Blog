@@ -4,6 +4,7 @@ body{
     padding: 1cm;
 }
 
+/*Começo do site*/
 .CShenlong{
     background-attachment: fixed; 
     background-repeat: no-repeat; 
@@ -15,7 +16,6 @@ body{
    
     animation: CShenlong 7s;
 }
-
 @keyframes CShenlong{
     from{    
         min-height: 0;
@@ -27,6 +27,7 @@ body{
     }
 }
 
+/* bem vindo */
 .line{
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin: 0 auto;
@@ -54,6 +55,7 @@ body{
     }
 }
 
+/*Video*/
 .social-network{
     list-style: none;
     padding: 0;
@@ -72,10 +74,13 @@ body{
 .icoYoutube:hover{
     color: rgb(255, 0, 0);
 }
+
+
 .icoGitHub:hover{
     color: #1b35c9;
 }
 
+/*Linha divisoria*/
 hr{
     background-image: linear-gradient(to right, #BD5200, #000000 , #BD5200); 
     margin-top: 2cm;
@@ -83,9 +88,11 @@ hr{
     height: 4px;
 }
 
+
 .whiteText{
     color: #ffffff;
 }
+
 
 .circle{
     transition-property: border-radius;
@@ -96,4 +103,14 @@ hr{
 .circle:hover
 {
     border-radius:50%;
+}
+
+animeScroll{
+    opacity: 0;
+    transition-delay: 1ms;
+    transition-duration: 2s;
+}
+animeScroll:hover{
+    opacity: 1;
+    transition-delay: 1ms;
 }

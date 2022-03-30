@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import * as $ from 'jQuery';
+
 
 @Component({
   selector: 'app-home',
@@ -8,13 +10,13 @@ import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons';
 })
 export class HomeComponent implements OnInit {
 
-
   faYoutube = faYoutube
   faGitHub = faGithub
 
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }
-
 }
+
