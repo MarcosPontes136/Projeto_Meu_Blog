@@ -12,19 +12,13 @@
                         <h5 class="card-title text-center">Marcos Pontes</h5>
                         <p class="card-text text-center">Desenvolvedor Backend Java</p>
                         <a href="#" target="_black" class="btn btn-outline-dark d-flex justify-content-center">Sobre mim</a>
-
-                        <hr class="mt-4 mb-4">
-                        <h6 class="mb-3 text-monospace text-center">Pesquisar por Nome</h6>
-                        <div type="text" class="form-control mb-3 w100">
-                            <button class="btn btn-outline-warning w-100">Pesquisar</button>
-                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-8">
                 <div class="mt-2">
-                    <h3 class="text-center mb-4 text-monospace">Digite abaixo os seus comentários:</h3>
+                    <h3 class="text-center mb-4 text-monospace line">Digite abaixo os seus comentários:</h3>
                     <div class="form-group">
                         <label for="nome" class="text-monospace">Nome:</label>
                         <input type="text" name="titulo" id="titulo" class="form-control" placeholder="Digite o seu Nome" [(ngModel)]="post.nome">
@@ -39,7 +33,7 @@
                     </div>
                 </div>
                 <hr class="mt-5 mb-5">
-                <h3 class="text-center mb-5 text-monospace">Comentários adicionados</h3>
+                <h3 class="text-center mb-5 text-monospace line">Comentários adicionados</h3>
                 <div class="container">
                     <div class="card mb-4" *ngFor="let post of listPost">
                         <div class="card-header">

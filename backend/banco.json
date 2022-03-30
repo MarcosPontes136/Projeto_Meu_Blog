@@ -4,51 +4,6 @@
       "id": 1,
       "nome": "Marcos",
       "mensagem": "Seja bem vindo ao meu blog pessoal!"
-    },
-    {
-      "id": 2,
-      "nome": "Barbara",
-      "mensagem": "Este blog é muito legal!"
-    },
-    {
-      "id": 3,
-      "nome": "Carlos",
-      "mensagem": "Essa é minha primeira postagem."
-    },
-    {
-      "nome": "MArcos",
-      "mensagem": "Teste 1",
-      "id": 4
-    },
-    {
-      "nome": "Marcos Pontes",
-      "mensagem": "teste de função",
-      "id": 5
-    },
-    {
-      "nome": "Marcos Pontes",
-      "mensagem": "Hello!!",
-      "id": 6
-    },
-    {
-      "nome": "Marcos",
-      "mensagem": "dadsadsda",
-      "id": 7
-    },
-    {
-      "nome": "marcos",
-      "mensagem": "sdsafsaffffffffasfsfaasf",
-      "id": 8
-    },
-    {
-      "nome": "Marcos Pontes",
-      "mensagem": "teste 1",
-      "id": 9
-    },
-    {
-      "nome": "Marcos Pontes",
-      "mensagem": "teste 2",
-      "id": 10
     }
   ]
 }
