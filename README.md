@@ -26,7 +26,7 @@ ng g c (nome da pasta para criar)
 <h2>Outras instalações no frontend:</h2>
 
 ```shell script
-npm i bootstarp
+npm i bootstrap
 ```
 ```shell script
 npm i jquery@~3.4.1
