@@ -1,7 +1,7 @@
 package com.ApiEmail.envioEmail.Controller;
 
 import com.ApiEmail.envioEmail.Service.EmailService;
-import com.ApiEmail.envioEmail.dto.Email;
+import com.ApiEmail.envioEmail.dto.EmailDTO;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -22,7 +22,7 @@ public class EmailSender {
 	private EmailService emailService;
 
 	@PostMapping(value = "/contato")
-	public ResponseEntity<Email> enviarEmail(@RequestBody Email email){
+	public ResponseEntity<EmailDTO> enviarEmail(@RequestBody EmailDTO email){
 	  try {
 		emailService.sendEmail(email);
 		return new ResponseEntity<>(email,  HttpStatus.OK);
