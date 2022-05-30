@@ -1,30 +1,41 @@
 package com.ApiEmail.envioEmail.Service;
 
+import java.time.LocalDateTime;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.MailException;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
-import com.ApiEmail.envioEmail.dto.EmailDTO;
+import com.ApiEmail.envioEmail.enums.StatusEmail;
+import com.ApiEmail.envioEmail.models.EmailModel;
+import com.ApiEmail.envioEmail.repositories.EmailRepository;
 
 @Service
 public class EmailService {
-
-    private JavaMailSender javaMailSender;
-
+	
     @Autowired
-    public EmailService(JavaMailSender javaMailSender) {
-        this.javaMailSender = javaMailSender;
-    }
+    EmailRepository emailRepository;
+    
+    @Autowired
+    private JavaMailSender emailSender;
 
-    public void sendEmail(EmailDTO email) throws MailException {
-        SimpleMailMessage mail = new SimpleMailMessage();
-        mail.setTo("marcospontes136@gmail.com");
-        mail.setFrom(email.getEmail());
-        mail.setSubject("Contato: " + email.getNome());
-        mail.setText(email.getMensagem());
-
-        javaMailSender.send(mail);
+    public EmailModel sendEmail(EmailModel emailModel) {
+    	emailModel.setSendDateEmail(LocalDateTime.now());
+    	try {
+    		SimpleMailMessage message = new SimpleMailMessage();
+    		message.setFrom(emailModel.getEmailFrom());
+            message.setTo(emailModel.getEmailTo());
+            message.setSubject(emailModel.getSubject());
+            message.setText(emailModel.getText());
+            emailSender.send(message);
+    		
+            emailModel.setStatusEmail(StatusEmail.SENT);
+		} catch (MailException e) {
+			emailModel.setStatusEmail(StatusEmail.ERROR);
+		} finally {
+			return emailRepository.save(emailModel);
+		}
     }
 }
